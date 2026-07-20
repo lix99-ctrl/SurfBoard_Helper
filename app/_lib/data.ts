@@ -3,14 +3,14 @@ import type { Surfboard } from './types';
 export const SURFBOARDS: Surfboard[] = [
   // --- Grovelers & Small Wave / Small-Mushy / Glassy ---
   { id: '1', brand: 'Lost', model: 'Sub Driver 2.0', volume: 30, lengthFt: 5.10, minWaveFt: 1, maxWaveFt: 5, idealConditions: ['small-mushy', 'average', 'glassy'], idealBreaks: ['beach-break', 'point-break'] },
-  { id: '2', brand: 'Firewire', model: 'Dominator 2.0', volume: 38, lengthFt: 6.0, minWaveFt: 1, maxWaveFt: 4, idealConditions: ['small-mushy', 'average', 'glassy'], idealBreaks: ['beach-break', 'point-break'] },
+  { id: '2', brand: 'Firewire', model: 'Dominator 2.0', volume: 38, lengthFt: 6.0, minWaveFt: 1, maxWaveFt: 4, idealConditions: ['small-mushy', 'average', 'glassy'], idealBreaks: ['beach-break', 'point-break'], affiliateUrl: 'https://www.boardshop.co.uk/firewire-helium-dominator-2-0-surfboard-6ft-10-futures-white?utm_source=google&utm_medium=cpc&utm_source=google&utm_medium=cpc&utm_campaign=&utm_term=&utm_content=&gad_source=1&gad_campaignid=21007083528&gbraid=0AAAAAD6cWcZ3ln8KO89GPJ8fK9rt40j_g&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpSsit-fpjTF35YOV-yWshrDdaBjlDGLKG7BAJ7Ds7_BdQpn9zxwSGBUaAqSIEALw_wcB' },
   { id: '3', brand: 'Channel Islands', model: 'CI Fish', volume: 35, lengthFt: 5.6, minWaveFt: 2, maxWaveFt: 5, idealConditions: ['small-mushy', 'glassy'], idealBreaks: ['point-break', 'reef-break'] },
   { id: '4', brand: 'Pyzel', model: 'White Tiger', volume: 33, lengthFt: 5.8, minWaveFt: 1, maxWaveFt: 4, idealConditions: ['small-mushy', 'average'], idealBreaks: ['beach-break'] },
   { id: '5', brand: 'JS Industries', model: 'XERO Gravity', volume: 31, lengthFt: 5.11, minWaveFt: 2, maxWaveFt: 6, idealConditions: ['average', 'glassy'], idealBreaks: ['beach-break', 'point-break'] },
   { id: '6', brand: 'Rusty', model: 'Dwart', volume: 36, lengthFt: 5.5, minWaveFt: 1, maxWaveFt: 4, idealConditions: ['small-mushy'], idealBreaks: ['beach-break'] },
   { id: '7', brand: 'Al Merrick', model: 'Neck Beard 3', volume: 34, lengthFt: 5.7, minWaveFt: 2, maxWaveFt: 5, idealConditions: ['small-mushy', 'average', 'glassy'], idealBreaks: ['beach-break'] },
   { id: '8', brand: 'Lost', model: 'Puddle Jumper HP', volume: 39, lengthFt: 5.8, minWaveFt: 1, maxWaveFt: 3, idealConditions: ['small-mushy'], idealBreaks: ['beach-break', 'reef-break'] },
-  { id: '9', brand: 'Firewire', model: 'Seaside', volume: 37, lengthFt: 5.5, minWaveFt: 2, maxWaveFt: 5, idealConditions: ['small-mushy', 'glassy', 'average'], idealBreaks: ['point-break', 'reef-break'], affiliateUrl: 'https://www.boardshop.co.uk/firewire-helium-dominator-2-0-surfboard-6ft-10-futures-white?utm_source=google&utm_medium=cpc&utm_source=google&utm_medium=cpc&utm_campaign=&utm_term=&utm_content=&gad_source=1&gad_campaignid=21007083528&gbraid=0AAAAAD6cWcZ3ln8KO89GPJ8fK9rt40j_g&gclid=Cj0KCQjwjvfSBhDpARIsAEiOpSsit-fpjTF35YOV-yWshrDdaBjlDGLKG7BAJ7Ds7_BdQpn9zxwSGBUaAqSIEALw_wcB' },
+  { id: '9', brand: 'Firewire', model: 'Seaside', volume: 37, lengthFt: 5.5, minWaveFt: 2, maxWaveFt: 5, idealConditions: ['small-mushy', 'glassy', 'average'], idealBreaks: ['point-break', 'reef-break'] },
   { id: '10', brand: 'Sharp Eye', model: 'Modern 2', volume: 32, lengthFt: 5.9, minWaveFt: 2, maxWaveFt: 5, idealConditions: ['average', 'glassy'], idealBreaks: ['beach-break'] },
 
   // --- All-Rounders / Average Conditions ---
