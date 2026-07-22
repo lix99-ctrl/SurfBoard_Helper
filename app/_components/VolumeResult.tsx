@@ -63,8 +63,8 @@ export function VolumeResult({ volume, user }: VolumeResultProps) {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-sans">
             {recommendedBoards.map((board) => (
               <div key={board.id || board.name} className="bg-white p-3 rounded border border-green-200 shadow-sm text-sm">
-                <div className="font-bold text-gray-900">{board.name}</div>
-                <div className="text-gray-600 text-xs">{board.brand} • {board.volume}L</div>
+                <div className="font-bold text-gray-900">{board.brand}</div>
+                <div className="text-gray-600 text-xs">{board.model} • {board.volume}L</div>
                 <div className="text-gray-500 text-xs mt-1 capitalize">Type: {board.type || 'All-rounder'}</div>
               </div>
             ))}
