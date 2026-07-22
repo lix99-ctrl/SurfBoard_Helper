@@ -10,7 +10,7 @@ export function recommendBoard(user: UserProfile, count: number = 4): Surfboard[
     ...board,
     score: getBoardMatchScore(board, user),
   }));
-
+  const recommendedBoards = recommendBoard(userProfile);
   // Lower score = better match
   boardsWithScores.sort((a, b) => a.score - b.score);
 
