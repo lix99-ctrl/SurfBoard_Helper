@@ -7,7 +7,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white text-gray-900">
       {/* Simple Header / Nav Bar */}
       <header className="border-b border-gray-100 py-4 px-6 max-w-5xl mx-auto flex justify-between items-center">
-        <span className="font-extrabold tracking-tight text-lg">THE SURF SHACK APP</span>
+        <span className="font-extrabold tracking-tight text-lg">THE BOARDROOMAPP</span>
         <nav className="space-x-6 text-sm font-medium">
           <Link href="/" className="text-blue-600">Calculator</Link>
           <Link href="/catalog" className="text-gray-600 hover:text-black">All Boards</Link>
