@@ -5,7 +5,7 @@ import { getBoardMatchScore } from './volumeCalc';
 import { SURFBOARDS } from './data'; // Import your full 50+ board database
 
 
-export function recommendBoard(user: UserProfile, count: number = 3): Surfboard[] {
+export function recommendBoard(user: UserProfile, count: number = 4): Surfboard[] {
   const boardsWithScores = SURFBOARDS.map((board) => ({
     ...board,
     score: getBoardMatchScore(board, user),
