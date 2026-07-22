@@ -33,7 +33,7 @@ export default function SurfForm() {
       conditions,
     };
     setRecommendContext(userProfile);
-    setRecommendations(recommendBoard(userProfile, 3));
+    setRecommendations(recommendBoard(userProfile, 4));
   }
 
   return (
