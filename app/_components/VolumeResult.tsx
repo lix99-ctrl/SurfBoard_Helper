@@ -1,7 +1,8 @@
 // Type-safe context display for surfboard recommendations
 
-import type { UserProfile } from '../_lib/types';
+import type { UserProfile, Surfboard } from '../_lib/types';
 import { getRecommendedVolumeRange } from '../_lib/volumeCalc';
+import { recommendBoard } from '../_lib/recommend'; // 1. Import your recommend function
 
 interface VolumeResultProps {
   volume: number;
@@ -39,6 +40,10 @@ export function VolumeResult({ volume, user }: VolumeResultProps) {
   if (showRange && user) {
     range = getRecommendedVolumeRange(user);
   }
+
+  // 2. Get the top 4 recommended boards if user profile exists
+  const recommendedBoards: Surfboard[] = user ? recommendBoard(user) : [];
+
   return (
     <section className="my-4 p-4 bg-green-100 rounded shadow font-mono text-lg text-green-900">
       Target Board Volume: <span className="font-bold">{volume} L</span>
@@ -48,6 +53,24 @@ export function VolumeResult({ volume, user }: VolumeResultProps) {
         </span>
       )}
       {user && <UserProfileSummary user={user} />}
+
+      {/* 3. Render the top 4 recommended boards grid */}
+      {recommendedBoards.length > 0 && (
+        <div className="mt-6 pt-4 border-t border-green-200">
+          <h3 className="text-base font-bold text-green-900 mb-3 font-sans">
+            Top 4 Recommended Boards for You:
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-sans">
+            {recommendedBoards.map((board) => (
+              <div key={board.id || board.name} className="bg-white p-3 rounded border border-green-200 shadow-sm text-sm">
+                <div className="font-bold text-gray-900">{board.name}</div>
+                <div className="text-gray-600 text-xs">{board.brand} • {board.volume}L</div>
+                <div className="text-gray-500 text-xs mt-1 capitalize">Type: {board.type || 'All-rounder'}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
     </section>
   );
 }
