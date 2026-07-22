@@ -4,7 +4,6 @@ import type { UserProfile, Surfboard } from './types';
 import { getBoardMatchScore } from './volumeCalc';
 import { SURFBOARDS } from './data'; // Import your full 50+ board database
 
-const recommendedBoards = recommendBoard(userProfile);
 export function recommendBoard(user: UserProfile, count: number = 4): Surfboard[] {
   const boardsWithScores = SURFBOARDS.map((board) => ({
     ...board,
